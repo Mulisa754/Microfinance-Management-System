@@ -1,0 +1,108 @@
+body{
+    background-color: #e6f8f5;
+    overflow: hidden;
+}
+#login-card{
+    position: relative;
+    top: 80px;
+}
+.login-con img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 120px;
+    top: 60px;
+}
+.login-text{
+    position: relative;
+    top: 70px;
+    left: 35px;
+    font-size: 15px;
+    color: #5f5570;
+}
+.login-text .login-text1{
+    font-weight: 900!important;
+}
+#top-navbar{
+    position:fixed;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    z-index: -1;
+}
+.sidebar{
+    background-color: #3c3450;
+    position: fixed;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    z-index: 5 !important;
+}
+.sidebar button{
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 9px 8px;
+    border-bottom: 1px solid #1b1e21;
+    background-color: #c3bbc8;
+}
+.sidebar button:hover{
+    cursor: pointer;
+    background-color: #5f5570;
+    transition: background-color 0.5s;
+    color: #e2e6ea;
+}
+.sidebar button::after{
+    content: '\f061';
+    font-family: fontawesome,sans-serif;
+    float: right;
+    transition: 0.7s linear;
+}
+.sidebar button.open::after{
+    content: '\f061';
+    transform: rotateZ(90deg);
+    transition: 0.7s linear;
+}
+.sidebar button.active{
+    background-color: #5f5570;
+    transition: background-color 0.5s;
+    color: #e2e6ea;
+}
+.sidebar .sub-menu{
+    background-color: #4f4667;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.7s linear;
+}
+.sidebar .sub-menu ul li{
+    position: relative;
+    padding: 9px 12px;
+    border-bottom: 1px solid #1b1e21;
+    list-style: none;
+    text-align: left;
+    width: 230px;
+    margin-bottom: 0!important;
+    left: -40px;
+    color: #ffffff;
+}
+.sidebar .user-profile{
+    background-color: #ffffff;
+    height: 150px;
+    padding: 9px 8px;
+}
+.sidebar .user-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.sidebar .user-profile .user-details{
+    font-weight: bold;
+    font-size: 13px;
+    color: #5f5570;
+}
+.main-content{
+    position: absolute;
+    width: calc(100% - 250px);
+    right: 5px;
+    top: 70px;
+}
